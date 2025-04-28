@@ -1,0 +1,141 @@
+/* src/pages/Resources.css */
+
+/* Outer container */
+.resources-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header at top */
+  .resources-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .resources-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  .resources-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Resource boxes */
+  .resource-box {
+    width: 1081px;
+    height: 430px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  /* Reverse layout when needed */
+  .resource-box.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Image styling */
+  .stock-image {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  
+  /* Text content area */
+  .resource-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Title styling inside the resource box */
+  .resource-title-main {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+    margin-bottom: 2rem;
+  }
+  
+  /* Link styling */
+  .resource-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 460px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .resource-link:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Arrow inside link */
+  .arrow {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+  }
+  
+  /* Text inside link */
+  .resource-link span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  /* Align entire boxes slightly overlapping the center */
+  .left-align {
+    align-self: flex-start;
+    margin-left: 8%;
+  }
+  
+  .right-align {
+    align-self: flex-end;
+    margin-right: 8%;
+  }
+  
+  /* Margin adjustments between image/text */
+  .resource-box:not(.reverse) .resource-content {
+    margin-left: 3rem;
+    margin-right: 0;
+  }
+  
+  .resource-box.reverse .resource-content {
+    margin-right: 3rem;
+    margin-left: 0;
+  }
+  

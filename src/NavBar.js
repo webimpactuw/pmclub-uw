@@ -1,5 +1,7 @@
 import './App.css';
 import logo from './logo.svg';
+import instagramImage from '../assets/Resources_Instagram.png';
+import linkedinImage from '../assets/linkedin.png';
 
 export function NavBar() {
     return (
@@ -14,11 +16,11 @@ export function NavBar() {
           <li><a href="#">Resources</a></li>
         </ul>
         <div className="navbar-right">
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">
-            <img src="/instagram.svg" alt="Instagram" className="icon" />
+          <a href="https://www.instagram.com/pmclubuw/" target="_blank" rel="noreferrer">
+          <img src={instagramImage} alt="Instagram" className="icon" />
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-            <img src="/linkedin.svg" alt="LinkedIn" className="icon" />
+            <img src={linkedinImage} alt="LinkedIn" className="icon" />
           </a>
         </div>
       </nav>

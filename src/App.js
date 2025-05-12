@@ -11,11 +11,9 @@ import { Footer } from './Footer.js';
 
 function App() {
   return (
-    <div className="App">
-      {/* NavBar is included in the layout */}
-      <NavBar />
-      
+    <div className="App"> 
       <BrowserRouter>
+        <NavBar />  
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -25,10 +23,8 @@ function App() {
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
-
-      {/* Footer component */}
-      <Footer />
     </div>
   );
 }

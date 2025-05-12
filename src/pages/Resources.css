@@ -1,0 +1,227 @@
+/* Outer container */
+.resources-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    padding: 4rem 2rem;
+    z-index: 1; /* Ensure content stays on top of gradient */
+}
+
+/* Gradient background that slides */
+.resources-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #F2E9AD 0%, #F8EAAB 100%);
+    animation: slideGradient 6s ease-in-out infinite; /* Apply the sliding gradient */
+    z-index: -1; /* Place the gradient behind content */
+}
+
+/* Header section for the Resources title and description */
+.resources-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* Title text styling */
+.resources-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+/* Subtitle text styling */
+.resources-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Resource boxes */
+.resource-box {
+    width: 1081px;
+    height: 430px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Reverse layout when needed */
+.resource-box.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image styling */
+.stock-image {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Text content area */
+.resource-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title styling inside the resource box */
+.resource-title-main {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+    margin-bottom: 2rem;
+}
+
+/* Link styling */
+.resource-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 460px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the link box */
+.resource-link:hover {
+    background: linear-gradient(to right, #9b76ff, #6a4cff);
+    color: #fff;
+}
+
+/* Right-pointing Arrow inside the link (always visible) */
+.resource-link .arrow {
+    position: absolute;
+    left: 89.29%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-left: 12px solid #000;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    margin-top: -6px;
+    transition: border-left-color 0.3s ease;
+}
+
+/* Hover effect on arrow */
+.resource-link:hover .arrow {
+    border-left-color: #fff;
+}
+
+/* Text inside link */
+.resource-link span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Gradient Background animation */
+@keyframes slideGradient {
+    0% {
+        background: linear-gradient(135deg, #F2E9AD 0%, #F8EAAB 100%);
+    }
+    50% {
+        background: linear-gradient(135deg, #EADFFF 0%, #DCCDFB 100%);
+    }
+    100% {
+        background: linear-gradient(135deg, #F2E9AD 0%, #F8EAAB 100%);
+    }
+}
+
+/* Align entire boxes slightly overlapping the center */
+.left-align {
+    align-self: flex-start;
+    margin-left: 8%;
+}
+
+.right-align {
+    align-self: flex-end;
+    margin-right: 8%;
+}
+
+/* Margin adjustments between image/text */
+.resource-box:not(.reverse) .resource-content {
+    margin-left: 3rem;
+    margin-right: 0;
+}
+
+.resource-box.reverse .resource-content {
+    margin-right: 3rem;
+    margin-left: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .resources-container {
+        padding: 2rem 1rem;
+    }
+
+    .resource-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .resource-title-main {
+        font-size: 28px;
+    }
+
+    .resource-link {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .stock-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .resources-container {
+        padding: 3rem 1.5rem;
+    }
+
+    .resource-box {
+        flex-direction: row;
+    }
+
+    .resource-title-main {
+        font-size: 30px;
+    }
+
+    .resource-link {
+        width: 80%;
+    }
+
+    .stock-image {
+        width: 80%;
+        height: auto;
+    }
+}

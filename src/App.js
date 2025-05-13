@@ -6,14 +6,14 @@ import Events from "./pages/Events";
 import Calendar from "./pages/Calendar";
 import Resources from "./pages/Resources";
 import NoPage from "./pages/NoPage";
-import { NavBar } from './NavBar.js';
-import { Footer } from './Footer.js';
+import Navbar from './components/Navbar.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
     <div className="App"> 
       <BrowserRouter>
-        <NavBar />  
+        <Navbar />  
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

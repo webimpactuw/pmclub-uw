@@ -1,0 +1,52 @@
+ 
+//  import duration from './objects/duration'
+//  import dayAndDate from './objects/dayAndDate'
+ export default {
+    title: 'Event Info',
+    name: 'eventInfo',
+    type: 'document',
+    fields: [
+    {
+      title: 'Event Name',
+      name: 'eventName',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Short description',
+      name: 'desc',
+      type: 'text',
+      options: {
+        maxLength: 250,
+      },
+      validation: Rule => Rule.required()
+    },
+    {
+      title: "Event Image",
+      name: "eventImage",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "dayAndDates",
+      title: "Date and Day",
+      type: "array",
+      of: [{type: 'dayAndDate'}],
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "eventDuration",
+      title: "Event Duration",
+      type: "array",
+      of: [{type: 'duration'}],
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "socialMediaLink",
+      title: "Link to Social Media Post",
+      type: "url"
+    }
+    ]
+  }

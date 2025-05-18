@@ -1,25 +1,30 @@
 import React from 'react';
 import './Navbar.css';
-import { Link } from "react-router-dom";
-
+import logo from '../assets/PM_Club_logo.jpg';
+import instagramImage from '../assets/Instagram.png';
+import linkedinImage from '../assets/LinkedIn.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav className="navbar" role="navigation">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/events">Events</Link>
-        </li>
-        <li>
-          <Link to="/resources">Resources</Link>
-        </li>
-        <li>
-          <Link to="/calendar">Calendar</Link>
-        </li>
+      <div className="navbar-left">
+        <img src={logo} alt="PM Logo" className="logo" />
+      </div>
+      <ul className="navbar-links">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/calendar">Calendar</Link></li>
+        <li><Link to="/resources">Resources</Link></li>
       </ul>
+      <div className="navbar-right">
+        <a href="https://www.instagram.com/pmclubuw/" target="_blank" rel="noreferrer">
+          <img src={instagramImage} alt="Instagram" className="icon" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+          <img src={linkedinImage} alt="LinkedIn" className="icon" />
+        </a>
+      </div>
     </nav>
   );
 };

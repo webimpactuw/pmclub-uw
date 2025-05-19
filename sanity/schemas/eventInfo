@@ -1,7 +1,4 @@
- 
-//  import duration from './objects/duration'
-//  import dayAndDate from './objects/dayAndDate'
- export default {
+export default {
     title: 'Event Info',
     name: 'eventInfo',
     type: 'document',
@@ -13,6 +10,15 @@
       validation: Rule => Rule.required()
     },
     {
+      title: "Slug",
+      name: "slug",
+      type: "slug",
+      options: {
+        source: "title",
+        maxLength: 96,
+      },
+    },
+    {
       title: 'Short description',
       name: 'desc',
       type: 'text',
@@ -22,8 +28,8 @@
       validation: Rule => Rule.required()
     },
     {
-      title: "Event Image",
-      name: "eventImage",
+      title: "Event Image or Flyer",
+      name: "image",
       type: "image",
       options: {
         hotspot: true,

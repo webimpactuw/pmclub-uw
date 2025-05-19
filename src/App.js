@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Events from "./pages/Events";
+import About from "./pages/About";
 import Calendar from "./pages/Calendar";
 import Resources from "./pages/Resources";
 import NoPage from "./pages/NoPage";
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="events" element={<Events />} />
+            <Route path="about" element={<About />} />
             <Route path="calendar" element={<Calendar />} />
             <Route path="resources" element={<Resources />} />
             <Route path="*" element={<NoPage />} />

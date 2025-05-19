@@ -1,12 +1,13 @@
 import Cover from "../assets/cover.jpg";
 import {HomeButton} from '../components/Buttons'
 import './Home.css';
+import EventsDisplay from "../components/EventsDisplay";
 
 const Home = () => {
   return (
     <>
-    <img src={Cover} alt="Photo of PM Club meeting at Founders Hall" id="image-section"/>
-    <div className="container">
+    <img src={Cover} alt="PM Club meeting at Founders Hall" id="image-section"/>
+    <section className="container">
       <div className="title">
         <p>EST. 2022</p>
         <h1>
@@ -20,10 +21,8 @@ const Home = () => {
           Our Interest Form
         </HomeButton>
       </div>
-    </div>
-    <div className="container">
-      <h1>Upcoming Events</h1>
-    </div>
+    </section>
+    <EventsDisplay/>
     </>
   );
 };

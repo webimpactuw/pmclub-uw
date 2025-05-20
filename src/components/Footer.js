@@ -1,5 +1,5 @@
 import './Footer.css';
-import logo from '../assets/PM_Club_logo.jpg';
+import logo from '../assets/PM_Club_logo_bg_removed.png';
 import instagramImage from '../assets/Instagram.png';
 import linkedinImage from '../assets/LinkedIn.png';
 
@@ -12,7 +12,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/pmclubuw/" target="_blank" rel="noreferrer">
             <img src={instagramImage} alt="Instagram" className="icon" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/company/product-management-club-at-uw-seattle" target="_blank" rel="noreferrer">
           <img src={linkedinImage} alt="Linkedin" className="icon" />
           </a>
         </div>

@@ -1,0 +1,37 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 210px;
+  border: none;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 0 1.5rem;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  background: var(--gradient, linear-gradient(270deg, #8082FF 0%, #A97FFB 100%));
+  transition: all 0.5s;
+}
+
+/* Hover effect for the link box */
+.home:hover {
+  background: linear-gradient(to right, #C6A9FF, #C6A9FF, #C6A9FF,#8082FF);
+  transition: all 0.5s;
+  color: #FFF;
+}
+
+/* Right-pointing Arrow inside the link (always visible) */
+.home .arrow {
+  position: sticky;
+  left: 89%;
+}
+
+/* Text inside link */
+.home span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}

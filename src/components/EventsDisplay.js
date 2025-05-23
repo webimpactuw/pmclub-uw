@@ -20,7 +20,8 @@ const EventsDisplay = () => {
       	},
       	dayAndDates,
 				eventDuration,
-				socialMediaLink
+				socialMediaLink,
+				location,
     	}`
 			)
 			.then((data) => setEvents(data))
@@ -28,18 +29,17 @@ const EventsDisplay = () => {
 	}, []);
 
 	return (
-		<div>
-			<h3>
+		<div style={{display:"flex", flexDirection:"column", marginBottom:"70px"}}>
+			<h2>
 				Upcoming Events
-			</h3>
-			<div>
+			</h2>
+			<div style={{display:"flex", flexDirection:"row", marginLeft:"70px", marginRight:"70px"}}>
 				{events &&
 					events.map((event) => (
 						<EventCard key={event._id} event={event} />
 					))}
 			</div>
 		</div>
-
 	);
 
 };

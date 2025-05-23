@@ -10,15 +10,6 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: "Slug",
-      name: "slug",
-      type: "slug",
-      options: {
-        source: "title",
-        maxLength: 96,
-      },
-    },
-    {
       title: 'Short description',
       name: 'desc',
       type: 'text',
@@ -26,14 +17,6 @@ export default {
         maxLength: 250,
       },
       validation: Rule => Rule.required()
-    },
-    {
-      title: "Event Image or Flyer",
-      name: "image",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
     },
     {
       name: "dayAndDates",
@@ -44,15 +27,44 @@ export default {
     },
     {
       name: "eventDuration",
-      title: "Event Duration",
+      title: "Event Times",
       type: "array",
       of: [{type: 'duration'}],
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "location",
+      title: "Location",
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "featured",
+      title: "Featuring (guest speakers or notable attendees)",
+      type: "array",
+      of: [{type: 'string'}],
+    },
+    {
+      title: "Event Image or Flyer",
+      name: "image",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
       name: "socialMediaLink",
       title: "Link to Social Media Post",
       type: "url"
-    }
+    },
+    {
+      title: "Slug",
+      name: "slug",
+      type: "slug",
+      options: {
+        source: "title",
+        maxLength: 96,
+      },
+    },
     ]
   }

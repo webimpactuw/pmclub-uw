@@ -11,14 +11,15 @@ function urlFor(source) {
 	return builder.image(source);
 }
 
-const EventCard = ({ event }) => {
+const EventCard = ({ key, event }) => {
 	return (
-    <div class="card">
-      <img src={urlFor(event.image).url()} alt={event.title} style={{width: 100}}/>
-      <h1>{event.eventName}</h1>
-      <p>{event.dayAndDates.date}</p>
-      <p>{event.dayAndDates.weekday}</p>
-      <p>{event.desc}</p>
+    <div key={key} className="card">
+      <img src={urlFor(event.image).url()} alt={event.title} style={{width: "100%"}}/>
+      <h3>{event.eventName}</h3>
+      <p className="time">🗓️{event.dayAndDates[0].date}</p>
+      <p className="time">🕓{event.dayAndDates[0].weekday}</p> 
+      <p className="time">📍{event.location}</p>
+      <p className="desc">{event.desc}</p>
       <HomeButton onClick={() => window.open(event.socialMediaLink, '_blank')}>
         More Info
       </HomeButton>

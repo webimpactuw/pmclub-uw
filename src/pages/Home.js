@@ -1,7 +1,8 @@
 import Cover from "../assets/cover.jpg";
-import {HomeButton} from '../components/Buttons'
+import { HomeButton } from '../components/Buttons'
 import './Home.css';
 import EventsDisplay from "../components/EventsDisplay";
+import PhotoGallery from "../components/PhotoGallery";
 
 const Home = () => {
   return (
@@ -10,8 +11,8 @@ const Home = () => {
     <section className="container">
       <div className="title">
         <p>EST. 2022</p>
-        <h1>
-          Product Management Club <span style={{color: "purple"}}>@</span> UW
+        <h1 style={{marginTop: "0px", fontSize: "40px"}}>
+          Product Management Club <span style={{color: "#8082FF"}}>@</span> UW
         </h1>
       </div>
       <div className="description">
@@ -23,6 +24,7 @@ const Home = () => {
       </div>
     </section>
     <EventsDisplay/>
+    <PhotoGallery/>
     </>
   );
 };

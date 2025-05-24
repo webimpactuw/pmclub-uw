@@ -18,7 +18,7 @@ const Accordion = ({ key, event }) => {
           <div className="accordion-content">
             <div style={{textAlign:"left"}}>Description <br/>{event.desc}</div>
             <div style={{textAlign:"left"}}>Featuring <br/>{event.featured}</div>
-            <div style={{textAlign:"left"}}>Location <br/>{event.location}</div>
+            <div style={{textAlign:"left"}}>Location <br/>{event.location ? event.location:"N/A"}</div>
           </div>
 
           </>

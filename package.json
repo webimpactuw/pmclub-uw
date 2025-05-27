@@ -1,6 +1,7 @@
 {
-  "name": "my-react-app",
+  "name": "pmclub-react-app",
   "version": "0.1.0",
+  "homepage": "https://webimpactuw.github.io/pmclub-uw",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -17,7 +18,6 @@
     "sanity-plugin-visual-options": "^2.0.2",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://webimpactuw.github.io/pmclub-uw",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

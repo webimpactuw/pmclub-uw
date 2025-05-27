@@ -12,10 +12,10 @@ const Navbar = () => {
         <img src={logo} alt="PM Logo" className="logo" />
       </div>
       <ul className="navbar-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/calendar">Calendar</Link></li>
-        <li><Link to="/resources">Resources</Link></li>
+        <li><Link to="/pmclub-uw/">Home</Link></li>
+        <li><Link to="/pmclub-uw/about">About</Link></li>
+        <li><Link to="/pmclub-uw/calendar">Calendar</Link></li>
+        <li><Link to="/pmclub-uw/resources">Resources</Link></li>
       </ul>
       <div className="navbar-right">
         <a href="https://www.instagram.com/pmclubuw/" target="_blank" rel="noreferrer">

@@ -26,7 +26,7 @@ const Calendar = () => {
   }, []);
 
   return(
-		<div style={{display:"flex", flexDirection:"column", marginBottom:"70px"}}>
+		<div className="main">
 			<h2>
 				Calendar
 			</h2>

@@ -27,16 +27,16 @@ const EventsDisplay = () => {
 			.then((data) => setEvents(data))
 			.catch(console.error);
 	}, []);
-
+  events && events.splice(2);
 	return (
 		<div style={{display:"flex", flexDirection:"column", marginBottom:"70px"}}>
 			<h2>
 				Upcoming Events
 			</h2>
-			<div style={{display:"flex", flexDirection:"row", marginLeft:"70px", marginRight:"70px"}}>
+			<div style={{display:"flex", height: "900px", flexDirection:"row", marginLeft:"70px", marginRight:"70px"}}>
 				{events &&
-					events.map((event) => (
-						<EventCard key={event._id} event={event} />
+					events.map((event, slug) => (
+						<EventCard key={event.slug} event={event} />
 					))}
 			</div>
 		</div>

@@ -15,12 +15,15 @@
   text-align: left;
   vertical-align: middle;
   padding-left: 20px;
-
 }
 
 .accordion-title:hover {
   transition: 0.5s;
   cursor: pointer;
+}
+
+.accordion-title::after {
+  transition: max-height 0.2s ease-out;
 }
 
 .accordion-title,
@@ -37,5 +40,11 @@
   display: grid;
   grid-template-columns: 2.7fr 1.2fr 1fr ;
   gap: 80px;
+  animation-name: dropDown;
+
 }
 
+@keyframes dropDown {
+  from {transform:scale(0.97)}
+  to {transform:scale(1)}
+}

@@ -25,6 +25,7 @@ const Home = () => {
     </section>
     <EventsDisplay/>
     <PhotoGrid/>
+    <section style={{height: "100px"}}></section>
     </>
   );
 };

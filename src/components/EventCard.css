@@ -1,14 +1,27 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 40%;
+  min-height: 90%;
   text-align: left;
   border-radius: 30px;
   padding: 30px;
   margin: auto;
+  transition: 0.3s;
+}
+
+@keyframes enlarge {
+  from {transform:scale(1)}
+  to {transform:scale(1.03)}
+}
+
+.card:hover {
+  animation-name: enlarge;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
 }
 
 .card button {
-  width: 60%;
+  width: 150px;
 }
 
 .time {
@@ -27,7 +40,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 80%;
+  width: 100%;
   flex-shrink: 0;
 
 }

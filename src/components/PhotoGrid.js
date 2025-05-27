@@ -12,18 +12,18 @@ function urlFor(source) {
 }
 
 const PhotoGrid = () => {
-  const [open, setOpen] = React.useState(false);
-  const [currImg, setcurrImg] = React.useState(minion);
+  // const [open, setOpen] = React.useState(false);
+  // const [currImg, setcurrImg] = React.useState(minion);
   const [clubImgs, setClubImgs] = useState(null);
 
-  const handleClose = () => {
-      setOpen(false);
-  };
+  // const handleClose = () => {
+  //     setOpen(false);
+  // };
 
-  const handleOpen = (myImg) => {
-      setOpen(true);
-      setcurrImg(myImg);
-  };
+  // const handleOpen = (myImg) => {
+  //     setOpen(true);
+  //     setcurrImg(myImg);
+  // };
 
   useEffect(() => {
     sanityClient
@@ -46,21 +46,22 @@ const PhotoGrid = () => {
   return(
     <>
       <h2>Gallery</h2>
+      <br/>
       <div className="masonry">
         {clubImgs && clubImgs.map((clubImg) => (
           <div className="item" key={clubImg.slug}>
             <img
               src={urlFor(clubImg.photo).url()}
               alt={clubImg.alt}
-              onClick={()=>handleOpen(urlFor(clubImg.photo).url())}
+              // onClick={()=>handleOpen(urlFor(clubImg.photo).url())}
             />
           </div>
         ))}
-      <Modal isOpen={open} onClose={handleClose}>
+      {/* <Modal isOpen={open} onClose={handleClose}>
         <div className="modal-img">
           <img src={currImg} style={{width: "40%"}}/>
         </div>
-      </Modal>
+      </Modal> */}
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 40%;
-  min-height: 90%;
+  min-height: 100%;
   text-align: left;
   border-radius: 30px;
   padding: 30px;
@@ -26,7 +26,7 @@
 
 .time {
   color: #000;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

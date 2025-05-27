@@ -28,8 +28,8 @@
 
 .accordion-title,
 .accordion-content {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: space-between;
   margin-right: 40px;
   margin-left: 40px;
@@ -38,8 +38,8 @@
 .accordion-content {
   border-top: 1px solid #BBB;
   display: grid;
-  grid-template-columns: 2.7fr 1.2fr 1fr ;
-  gap: 80px;
+  grid-template-columns: 2.7fr 1.5fr 1fr ;
+  gap: 75px;
   animation-name: dropDown;
 
 }

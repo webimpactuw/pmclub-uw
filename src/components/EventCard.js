@@ -14,7 +14,7 @@ function urlFor(source) {
 const EventCard = ({ key, event }) => {
 	return (
     <div key={key} className="card">
-      <img src={urlFor(event.image).url()} alt={event.title} style={{width: "80%", marginRight: "auto", display: "block", marginLeft: "auto", marginTop: "30px"}}/>
+      <img src={urlFor(event.image).url()} alt={event.title} style={{width: "75%", marginRight: "auto", display: "block", marginLeft: "auto", marginTop: "30px"}}/>
       <h3>{event.eventName}</h3>
       <p className="time">🗓️ {event.dayAndDates[0].weekday}, {event.dayAndDates[0].date}</p>
       <p className="time">

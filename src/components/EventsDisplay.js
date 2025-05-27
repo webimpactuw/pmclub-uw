@@ -33,7 +33,7 @@ const EventsDisplay = () => {
 			<h2>
 				Upcoming Events
 			</h2>
-			<div style={{display:"flex", height: "900px", flexDirection:"row", marginLeft:"70px", marginRight:"70px"}}>
+			<div style={{display:"flex", height: "700px", flexDirection:"row", marginLeft:"100px", marginRight:"100px"}}>
 				{events &&
 					events.map((event, slug) => (
 						<EventCard key={event.slug} event={event} />

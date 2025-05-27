@@ -24,6 +24,7 @@ const Home = () => {
       </div>
     </section>
     <EventsDisplay/>
+    <section style={{height: "80px"}}></section>
     <PhotoGrid/>
     <section style={{height: "100px"}}></section>
     </>

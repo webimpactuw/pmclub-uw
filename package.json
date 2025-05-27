@@ -17,11 +17,15 @@
     "sanity-plugin-visual-options": "^2.0.2",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://webimpactuw.github.io/pmclub-uw",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "react-refresh-webpack-plugin": "^0.1.0",
     "react-router-dom": "^7.6.0",

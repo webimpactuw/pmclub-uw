@@ -1,3 +1,11 @@
+import {
+  announcement, arts, book, convo,food,
+  heart,industry,laptop,lightBulb,panel,
+  pplConvo,star,
+  takeNotes
+} from "../../src/assets/icons/icons"
+
+
 export default {
     title: 'Event Info',
     name: 'eventInfo',
@@ -17,6 +25,73 @@ export default {
         maxLength: 250,
       },
       validation: Rule => Rule.required()
+    },
+    {
+      title: 'Choose an Icon',
+      name: 'icon',
+      type: 'visualOptions',
+      description: 'Select an icon (you can preview what they look like in the /src/assets/icons folder',
+      options: {
+        showLabels: false,
+        showTooltip: true,
+        optionSize: "small",
+        list: {
+          Announcement: {
+            name: "Announcement",
+            icon: announcement,
+            default: true
+          },
+          Arts: {
+            name: "Arts",
+            icon: arts,
+          },
+          Book: {
+            name: "Book",
+            icon: book,
+          },
+          Convo: {
+            name: "Convo",
+            icon: convo,
+          },
+          Food: {
+            name: "Food",
+            icon: food,
+          },
+          Heart: {
+            name: "Heart",
+            icon: heart,
+          },
+          Industry: {
+            name: "Industry",
+            icon: industry,
+          },
+          Laptop: {
+            name: "Laptop",
+            icon: laptop,
+          },
+          LightBulb: {
+            name: "LightBulb",
+            icon: lightBulb,
+          },
+          Panel: {
+            name: "Panel",
+            icon: panel,
+          },
+          PplConvo: {
+            name: "PplConvo",
+            icon: pplConvo,
+          },
+          Star: {
+            name: "Star",
+            icon: star,
+          },
+          TakeNotes: {
+            name: "TakeNotes",
+            icon: takeNotes,
+          },
+        },
+      },
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "dayAndDates",

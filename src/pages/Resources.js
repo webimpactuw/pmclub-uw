@@ -55,7 +55,7 @@ const Resources = () => {
       <div className="resources-header">
         <h1 className="resources-title">Resources</h1>
         <p className="resources-subtitle">
-          Here are some resources to get you started on your Product Management Journey. 
+          Here are some resources to get you started on your Product Management Journey. <br/>
           This is by no means an exhaustive list; feel free to explore more!
         </p>
       </div>

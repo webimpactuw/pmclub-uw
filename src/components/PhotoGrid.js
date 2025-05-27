@@ -43,7 +43,6 @@ const PhotoGrid = () => {
       .catch(console.error);
   }, []);
 
-  console.log(clubImgs);
   return(
     <>
       <h2>Gallery</h2>

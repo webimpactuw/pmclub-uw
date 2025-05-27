@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Button.css";
-import arrow from "../assets/Arrow 2.svg"
 import { ReactComponent as Arrow } from '../assets/Arrow 2.svg';
 
 export function ResouorcesButton({ children, onClick }){

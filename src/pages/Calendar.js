@@ -12,6 +12,7 @@ const Calendar = () => {
       `*[_type == "eventInfo"]{
         eventName,
         desc,
+        icon,
         dayAndDates,
         eventDuration,
         location,

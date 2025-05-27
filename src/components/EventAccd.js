@@ -24,11 +24,13 @@ const Accordion = ({ key, event }) => {
           <div className="accordion-content">
             <div style={{textAlign:"left", width:"90%"}}><h4>Description</h4>{event.desc}</div>
             <div style={{textAlign:"left"}}>
-              <h4>Featuring</h4> 
+              <h4>Featuring</h4>
+              <ul style={{margin:"14px", padding:"0"}}>
               {event.featured &&
                 event.featured.map((person, index) => (
-                  <p key={index}>{person.name} - <b>{person.affiliation}</b></p>
+                  <li key={index}>{person.name} - <b>{person.affiliation}</b></li>
                 ))}
+              </ul>
             </div>
             <div style={{textAlign:"left"}}><h4>Location</h4>{event.location ? event.location:"N/A"}</div>
           </div>

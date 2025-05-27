@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/pmclub-uw/static/css/main.b7ec8ce2.css",
+    "main.js": "/pmclub-uw/static/js/main.6e63124c.js",
+    "static/js/308.96840837.chunk.js": "/pmclub-uw/static/js/308.96840837.chunk.js",
+    "static/js/37.ee9355ba.chunk.js": "/pmclub-uw/static/js/37.ee9355ba.chunk.js",
+    "static/js/511.0c497b04.chunk.js": "/pmclub-uw/static/js/511.0c497b04.chunk.js",
+    "static/media/cover.jpg": "/pmclub-uw/static/media/cover.6af05e03714457290af5.jpg",
+    "static/media/minion.png": "/pmclub-uw/static/media/minion.970019cad28320693f29.png",
+    "static/media/Resources_ProjectRequirements.jpg": "/pmclub-uw/static/media/Resources_ProjectRequirements.7f8385ae771b706038c2.jpg",
+    "static/media/Resources_Youtube.jpg": "/pmclub-uw/static/media/Resources_Youtube.cda29bff5e9d3a8a78d0.jpg",
+    "static/media/PM_Club_logo_bg_removed.png": "/pmclub-uw/static/media/PM_Club_logo_bg_removed.d79d2eb469e74f07f752.png",
+    "static/media/About_TeamPicture.jpg": "/pmclub-uw/static/media/About_TeamPicture.6e5b518f3eefadb99a30.jpg",
+    "static/media/Resources_ProductManagement.jpg": "/pmclub-uw/static/media/Resources_ProductManagement.8fd4256adca268acbc05.jpg",
+    "static/media/Resources_Interviews.jpg": "/pmclub-uw/static/media/Resources_Interviews.b902b657e6fe52690d16.jpg",
+    "static/media/Announcement.svg": "/pmclub-uw/static/media/Announcement.852ce189063a4b32587716c9ffe73d8d.svg",
+    "index.html": "/pmclub-uw/index.html",
+    "static/media/Arrow 2.svg": "/pmclub-uw/static/media/Arrow 2.549b353f7e38004919594d10af7a3aa4.svg",
+    "main.b7ec8ce2.css.map": "/pmclub-uw/static/css/main.b7ec8ce2.css.map",
+    "main.6e63124c.js.map": "/pmclub-uw/static/js/main.6e63124c.js.map",
+    "308.96840837.chunk.js.map": "/pmclub-uw/static/js/308.96840837.chunk.js.map",
+    "37.ee9355ba.chunk.js.map": "/pmclub-uw/static/js/37.ee9355ba.chunk.js.map",
+    "511.0c497b04.chunk.js.map": "/pmclub-uw/static/js/511.0c497b04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7ec8ce2.css",
+    "static/js/main.6e63124c.js"
+  ]
+}

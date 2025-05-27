@@ -13,11 +13,11 @@ import ScrollToTop from "./scrollToTop";
 function App() {
   return (
     <div className="App"> 
-      <BrowserRouter>
+      <BrowserRouter basename="/pmclub-uw">
         <ScrollToTop />
         <Navbar />  
         <Routes>
-          <Route path="/pmclub-uw/" element={<Layout />}>
+          <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="calendar" element={<Calendar />} />

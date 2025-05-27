@@ -1,0 +1,79 @@
+/* Modal Styling*/
+.modal-img {
+  position: absolute;
+  margin: auto;
+  top: 10px;
+  bottom: 40px;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-img {
+    width: 100%;
+  }
+} 
+
+
+/* Gallery Photos Styling */
+
+/* Style the Image Used to Trigger the Modal */
+#gallery_img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#gallery_img:hover {opacity: 0.7;}
+
+.masonry { /* Masonry container */
+  column-count: 4;
+  column-gap: 1em;
+  margin: 1.5em auto;
+  max-width: 1200px;
+}
+
+.item { /* Masonry bricks or child elements */
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  margin-bottom: 30px;
+  vertical-align: top;
+}
+
+.item img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px){
+  .masonry {
+    column-count: 2;
+  }
+}

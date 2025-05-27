@@ -42,7 +42,7 @@ export default {
       name: "featured",
       title: "Featuring (guest speakers or notable attendees)",
       type: "array",
-      of: [{type: 'string'}],
+      of: [{type: 'speaker'}],
     },
     {
       title: "Event Image or Flyer",
@@ -62,7 +62,7 @@ export default {
       name: "slug",
       type: "slug",
       options: {
-        source: "title",
+        source: "socialMediaLink",
         maxLength: 96,
       },
     },

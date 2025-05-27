@@ -2,7 +2,7 @@ import Cover from "../assets/cover.jpg";
 import { HomeButton } from '../components/Buttons'
 import './Home.css';
 import EventsDisplay from "../components/EventsDisplay";
-import PhotoGallery from "../components/PhotoGallery";
+import PhotoGrid from "../components/PhotoGrid";
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
       </div>
     </section>
     <EventsDisplay/>
-    <PhotoGallery/>
+    <PhotoGrid/>
     </>
   );
 };

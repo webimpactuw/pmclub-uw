@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'PM Club Website',
 
-  projectId: '4sevlcl1',
+  projectId: '98w417at',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],

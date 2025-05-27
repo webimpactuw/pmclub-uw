@@ -1,0 +1,30 @@
+export default {
+    title: 'Club Photo',
+    name: 'clubPhoto',
+    type: 'document',
+    fields: [
+    {
+      title: "Photo",
+      name: "photo",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      title: 'Alt Text',
+      name: 'alt',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: "Slug",
+      name: "slug",
+      type: "slug",
+      options: {
+        source: "alt",
+        maxLength: 96,
+      },
+    },
+    ]
+  }

@@ -9,10 +9,13 @@
   padding-bottom: 70px;
 }
 
-/* Optional: Make sure your EventsDisplay and PhotoGallery content doesn't override background */
 .home-gradient-section > * {
   z-index: 1;
   position: relative;
+}
+
+.gallery-section {
+  background: white;
 }
 
 #image-section{
@@ -32,8 +35,8 @@
   gap: 5px;
   margin-bottom: 70px;
   margin-top: 20px;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 110px;
+  margin-right: 110px;
   align-items: center;
 }
 
@@ -46,16 +49,6 @@
 }
 .container > div.description {
   text-align: left;
+  margin-left: 5px;
   grid-area: description;
 }
-
-/* .container > div.header {
-  grid-area: header;
-  text-align: center;
-} */
-/* .container > div.footer {
-  grid-area: footer;
-} */
-
-
-

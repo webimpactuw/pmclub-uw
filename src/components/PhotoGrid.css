@@ -1,0 +1,83 @@
+/* Modal Styling*/
+.modal-img {
+  position: absolute;
+  margin:20px;
+  top: 40px;
+  bottom: 40px;
+  display: block;
+  max-width: 100%;
+  width: 80%;
+  object-fit: cover;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+@keyframes enlarge {
+  from {transform:scale(1)}
+  to {transform:scale(1.03)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-img {
+    width: 100%;
+  }
+} 
+
+
+/* Gallery Photos Styling */
+
+.masonry { /* Masonry container */
+  column-count: 3;
+  column-gap: 1em;
+  margin: 1.5em auto;
+  max-width: 1000px;
+}
+
+.item { /* Masonry bricks or child elements */
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  margin-bottom: 30px;
+  vertical-align: top;
+  /* cursor: pointer; */
+  transition: 0.3s;
+}
+
+.item:hover {
+  opacity: 0.7;
+  animation-name: enlarge;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.item img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px){
+  .masonry {
+    column-count: 2;
+  }
+}

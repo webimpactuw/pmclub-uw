@@ -1,6 +1,8 @@
 /* === Container & Title === */
 .about-container {
     padding: 4rem 2rem;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   /* Our Team header: Figtree italic + centered rule */
 .about-title {
@@ -47,10 +49,11 @@
   }
   .about-hero-text p {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
     color: #333;
     margin-bottom: 1rem;
+    width: 95%;
   }
   .about-hero-image {
     flex: 1 1 50%;
@@ -65,7 +68,7 @@
   .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2.5rem;
+    grid-gap: 1.5rem;
     max-width: 980px;
     margin: 0 auto;
   }
@@ -73,7 +76,7 @@
   /* === Each Card === */
   .team-card {
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 320px;
     perspective: 800px;
     cursor: pointer;

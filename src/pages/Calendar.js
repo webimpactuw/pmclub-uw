@@ -12,6 +12,7 @@ const Calendar = () => {
       `*[_type == "eventInfo"]{
         eventName,
         desc,
+        icon,
         dayAndDates,
         eventDuration,
         location,
@@ -26,6 +27,7 @@ const Calendar = () => {
 
   return(
 		<div style={{display:"flex", flexDirection:"column", marginBottom:"70px", minHeight: "100vh"}}>
+		<div className="main">
 			<h2>
 				Calendar
 			</h2>
@@ -36,6 +38,7 @@ const Calendar = () => {
 					))}
 			</div>
 		</div>
+    </div>
   );
 };
 

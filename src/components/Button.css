@@ -13,13 +13,13 @@
   color: #ffffff;
   position: relative;
   background: var(--gradient, linear-gradient(270deg, #8082FF 0%, #A97FFB 100%));
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 /* Hover effect for the link box */
 .home:hover {
   background: linear-gradient(to right, #C6A9FF, #C6A9FF, #C6A9FF,#8082FF);
-  transition: all 0.5s;
+  transition: all 0.8s;
   color: #FFF;
 }
 

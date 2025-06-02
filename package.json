@@ -1,13 +1,11 @@
 {
-  "name": "my-react-app",
+  "name": "pmclub-react-app",
   "version": "0.1.0",
+  "homepage": "https://webimpactuw.github.io/pmclub-uw",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^7.1.0",
-    "@mui/lab": "^7.0.0-beta.12",
-    "@mui/material": "^7.1.0",
     "@sanity/client": "^7.2.1",
     "@sanity/image-url": "^1.1.0",
     "@testing-library/dom": "^10.4.0",
@@ -17,13 +15,16 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "^5.0.1",
+    "sanity-plugin-visual-options": "^2.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "react-refresh-webpack-plugin": "^0.1.0",
     "react-router-dom": "^7.6.0",

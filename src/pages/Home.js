@@ -2,7 +2,7 @@ import Cover from "../assets/cover.jpg";
 import { HomeButton } from '../components/Buttons'
 import './Home.css';
 import EventsDisplay from "../components/EventsDisplay";
-import PhotoGallery from "../components/PhotoGallery";
+import PhotoGrid from "../components/PhotoGrid";
 
 const Home = () => {
   return (
@@ -29,10 +29,15 @@ const Home = () => {
         </section>
       </div>
 
-      <div className="home-gradient-section">
-        <EventsDisplay />
-        <PhotoGallery />
-      </div>
+    <div className="home-gradient-section">
+      <EventsDisplay/>
+    <EventsDisplay/>
+    </div>
+    <div className="gallery-section">
+      <section style={{height: "80px"}}></section>
+      <PhotoGrid/>
+      <section style={{height: "100px"}}></section>
+    </div>
     </>
   );
 };

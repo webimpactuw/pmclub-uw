@@ -8,11 +8,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 .accordion-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 0.2fr;
+  gap: 5px;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 20px;
 }
 
 .accordion-title:hover {
@@ -20,20 +22,29 @@
   cursor: pointer;
 }
 
+.accordion-title::after {
+  transition: max-height 0.2s ease-out;
+}
+
 .accordion-title,
 .accordion-content {
-  display: flex;
-  padding: 30px;
-  align-items: flex-start;
-  gap: 30px;
-  display: flex;
-  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: space-between;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .accordion-content {
   border-top: 1px solid #BBB;
-  margin-right: 60px;
-  margin-left: 30px;
+  display: grid;
+  grid-template-columns: 2.7fr 1.5fr 1fr ;
+  gap: 75px;
+  animation-name: dropDown;
+
 }
 
+@keyframes dropDown {
+  from {transform:scale(0.97)}
+  to {transform:scale(1)}
+}

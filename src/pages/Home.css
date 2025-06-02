@@ -1,3 +1,20 @@
+.home-white-section {
+  background-color: white;
+  padding-bottom: 40px;
+}
+
+.home-gradient-section {
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 20%, #fdfbff 40%, #d9cafa 100%);
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+/* Optional: Make sure your EventsDisplay and PhotoGallery content doesn't override background */
+.home-gradient-section > * {
+  z-index: 1;
+  position: relative;
+}
+
 #image-section{
   width: 100%; 
   height: 400px; 

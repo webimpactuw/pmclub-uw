@@ -25,7 +25,7 @@ const Calendar = () => {
   }, []);
 
   return(
-		<div style={{display:"flex", flexDirection:"column", marginBottom:"70px"}}>
+		<div style={{display:"flex", flexDirection:"column", marginBottom:"70px", minHeight: "100vh"}}>
 			<h2>
 				Calendar
 			</h2>

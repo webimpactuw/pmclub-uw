@@ -13,6 +13,14 @@
   }
 }
 
+body {
+  background: linear-gradient(45deg, #fff5ce 0%, #fbf8e0 20%, #ffff 40%, #f5eefc 80%, #e3d6ff 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,7 +29,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -91,7 +99,7 @@
 main {
   flex: 1;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 
 /* footer */

@@ -4,10 +4,10 @@ This website is the cumulative effort of 6 UW students over the course of 6 mont
 
 ## The Team:
 
-- **Project Lead**: Tina Lai
-- **Design**: Deveshi Modi, Celine Chen, Patricia Isabel
-  - Check out their [Figma design prototype](https://www.figma.com/proto/hY5yGUDlFY7zwwk2rbZHyA/Fidelity?node-id=509-326&t=5Goj6EJUAC7byqcG-9&scaling=scale-down&content-scaling=fixed&page-id=197%3A84&starting-point-node-id=509%3A326&show-proto-sidebar=1)
-- **Coding**: Rina Yuan, Ameya Bhide, Tina Lai
+**Project Lead**: Tina Lai\
+**Design**: Deveshi Modi, Celine Chen, Patricia Isabel\
+  Check out their [Figma design prototype](https://www.figma.com/proto/hY5yGUDlFY7zwwk2rbZHyA/Fidelity?node-id=509-326&t=5Goj6EJUAC7byqcG-9&scaling=scale-down&content-scaling=fixed&page-id=197%3A84&starting-point-node-id=509%3A326&show-proto-sidebar=1)\
+**Coding**: Rina Yuan, Ameya Bhide, Tina Lai
 
 ## Sanity.io
 

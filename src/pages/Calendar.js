@@ -26,7 +26,7 @@ const Calendar = () => {
   }, []);
 
   return(
-		<div style={{display:"flex", flexDirection:"column", marginBottom:"70px", minHeight: "100vh"}}>
+		<div className="gradient-section">
 		<div className="main">
 			<h2>
 				Calendar

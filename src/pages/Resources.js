@@ -51,6 +51,7 @@ const resourcesData = [
 
 const Resources = () => {
   return (
+    <div className="gradient-section">
     <div className="resources-container">
       <div className="resources-header">
         <h2>Resources</h2>
@@ -91,6 +92,7 @@ const Resources = () => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };

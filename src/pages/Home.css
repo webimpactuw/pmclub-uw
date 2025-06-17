@@ -3,17 +3,6 @@
   padding-bottom: 40px;
 }
 
-.home-gradient-section {
-  background: linear-gradient(135deg, #ffffff 0%, #ffffff 20%, #fdfbff 40%, #d9cafa 100%);
-  padding-top: 40px;
-  padding-bottom: 70px;
-}
-
-.home-gradient-section > * {
-  z-index: 1;
-  position: relative;
-}
-
 .gallery-section {
   background: white;
 }

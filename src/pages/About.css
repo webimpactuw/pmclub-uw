@@ -1,9 +1,5 @@
 /* === Container & Title === */
-.about-container {
-    padding: 4rem 2rem;
-    margin-left: 60px;
-    margin-right: 60px;
-  }
+
   /* Our Team header: Figtree italic + centered rule */
 .about-title {
     font-family: 'Figtree', sans-serif;
@@ -63,7 +59,7 @@
     border-radius: 20px;
     object-fit: cover;
   }
-  
+
   /* === Team Grid (3×3 + center) === */
   .team-grid {
     display: grid;
@@ -106,9 +102,9 @@
   .front {
     background: #fff;
   }
-  .photo-placeholder {
+  .officer-photo {
     flex: 1 0 auto;
-    background: #ccc;
+    padding-top: 0.75rem;
   }
   .card-footer {
     flex: 0 0 80px;
@@ -135,7 +131,7 @@
     justify-content: center;
     color: #000;
     text-align: center;
-    padding: 1rem;
+    padding: 1.3rem;
   }
   
   /* Flip states */

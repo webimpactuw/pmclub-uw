@@ -1,0 +1,48 @@
+export default {
+    title: 'Club Officers',
+    name: 'clubOfficer',
+    type: 'document',
+    fields: [
+    {
+      title: "First Name",
+      name: "fname",
+      type: "string",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: "Last Name",
+      name: "lname",
+      type: "string",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Position',
+      name: 'pos',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Short Biography',
+      name: 'bio',
+      type: 'text',
+      validation: Rule => Rule.required().max(250)
+    },
+    {
+      title: "Officer Photo",
+      name: "photo",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      title: "Slug",
+      name: "slug",
+      type: "slug",
+      options: {
+        source: "bio",
+        maxLength: 96,
+      },
+    },
+    ]
+  }

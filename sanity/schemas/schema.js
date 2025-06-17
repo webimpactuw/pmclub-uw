@@ -5,6 +5,7 @@ import dayAndDate from './objects/dayAndDate';
 import eventInfo from './eventInfo';
 import clubPhoto from './clubPhoto';
 import speaker from './objects/speaker';
+import clubOfficer from './clubOfficer';
 
 export default createSchema({
 
@@ -14,6 +15,7 @@ export default createSchema({
     dayAndDate,
     eventInfo,
     clubPhoto,
-    speaker
+    speaker,
+    clubOfficer
   ]),
 });

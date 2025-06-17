@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./About.css";
+import sanityClient from "../client";
+import imageUrlBuilder from "@sanity/image-url";
 
 // (Optionally import your real image instead of this placeholder)
 import heroImage from "../assets/About_TeamPicture.jpg";
 
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source) {
+	return builder.image(source);
+}
+
 const About = () => {
   const [flipped, setFlipped] = useState(Array(10).fill(false));
+  const [officers, setOfficers] = useState(null);
 
   const handleFlip = (idx) => {
     setFlipped((prev) =>
@@ -13,8 +22,25 @@ const About = () => {
     );
   };
 
+  useEffect(() => {
+    sanityClient
+      .fetch(
+      `*[_type == "clubOfficer"]{
+        fname,
+        lname,
+        pos,
+        bio,
+        photo,
+        slug,
+      }`
+      )
+      .then((data) => setOfficers(data))
+      .catch(console.error);
+  }, []);
+
   return (
-    <div className="about-container">
+    <>
+    <div className="non-gradient-section">
       {/* ====== Hero / Intro Section ====== */}
       <div className="about-hero">
         <div className="about-hero-text">
@@ -38,32 +64,37 @@ const About = () => {
           <img src={heroImage} alt="Students collaborating" />
         </div>
       </div>
-
+    </div>
       {/* ====== Our Team Section ====== */}
+    <div className="gradient-section">
       <h1 className="about-title">Our Team</h1>
       <div className="team-grid">
-        {Array.from({ length: 10 }).map((_, i) => (
+        {officers && Array.from({ length: officers.length }).map((_, i) => (
           <div
             key={i}
             className={`team-card ${flipped[i] ? "flipped" : ""} ${
-              i === 9 ? "last" : ""
+              i === officers.length-1 ? "last" : ""
             }`}
             onClick={() => handleFlip(i)}
           >
             <div className="card-face front">
-              <div className="photo-placeholder" />
+              <div className="officer-photo">
+                <img src={urlFor(officers[i].photo).url()} alt={officers[i].fname} style={{height: "225px"}}/>
+              </div>
               <div className="card-footer">
-                <p className="member-name">Name</p>
-                <p className="member-pos">Position</p>
+                <p className="member-name">{officers[i].fname} {officers[i].lname}</p>
+                <p className="member-pos">{officers[i].pos}</p>
               </div>
             </div>
             <div className="card-face back">
-              <p>More info about this person</p>
+              <p>{officers[i].bio}</p>
             </div>
           </div>
         ))}
       </div>
-    </div>
+      <section style={{height: "40px"}}></section>
+      </div>
+    </>
   );
 };
 

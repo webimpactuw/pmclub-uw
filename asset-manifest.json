@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pmclub-uw/static/css/main.e4e9f72b.css",
-    "main.js": "/pmclub-uw/static/js/main.7c7ea95a.js",
+    "main.css": "/pmclub-uw/static/css/main.1f2c6107.css",
+    "main.js": "/pmclub-uw/static/js/main.8ab0a1ca.js",
     "static/js/308.39f10ea2.chunk.js": "/pmclub-uw/static/js/308.39f10ea2.chunk.js",
     "static/js/37.738ccdf1.chunk.js": "/pmclub-uw/static/js/37.738ccdf1.chunk.js",
     "static/js/511.88b5066b.chunk.js": "/pmclub-uw/static/js/511.88b5066b.chunk.js",
@@ -11,19 +11,20 @@
     "static/media/Resources_Youtube.jpg": "/pmclub-uw/static/media/Resources_Youtube.cda29bff5e9d3a8a78d0.jpg",
     "static/media/PM_Club_logo_bg_removed.png": "/pmclub-uw/static/media/PM_Club_logo_bg_removed.d79d2eb469e74f07f752.png",
     "static/media/About_TeamPicture.jpg": "/pmclub-uw/static/media/About_TeamPicture.6e5b518f3eefadb99a30.jpg",
+    "static/media/placeholder.png": "/pmclub-uw/static/media/placeholder.d9617f0f43b0c782e165.png",
     "static/media/Resources_ProductManagement.jpg": "/pmclub-uw/static/media/Resources_ProductManagement.8fd4256adca268acbc05.jpg",
     "static/media/Resources_Interviews.jpg": "/pmclub-uw/static/media/Resources_Interviews.b902b657e6fe52690d16.jpg",
     "static/media/Announcement.svg": "/pmclub-uw/static/media/Announcement.852ce189063a4b32587716c9ffe73d8d.svg",
     "index.html": "/pmclub-uw/index.html",
     "static/media/Arrow 2.svg": "/pmclub-uw/static/media/Arrow 2.549b353f7e38004919594d10af7a3aa4.svg",
-    "main.e4e9f72b.css.map": "/pmclub-uw/static/css/main.e4e9f72b.css.map",
-    "main.7c7ea95a.js.map": "/pmclub-uw/static/js/main.7c7ea95a.js.map",
+    "main.1f2c6107.css.map": "/pmclub-uw/static/css/main.1f2c6107.css.map",
+    "main.8ab0a1ca.js.map": "/pmclub-uw/static/js/main.8ab0a1ca.js.map",
     "308.39f10ea2.chunk.js.map": "/pmclub-uw/static/js/308.39f10ea2.chunk.js.map",
     "37.738ccdf1.chunk.js.map": "/pmclub-uw/static/js/37.738ccdf1.chunk.js.map",
     "511.88b5066b.chunk.js.map": "/pmclub-uw/static/js/511.88b5066b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4e9f72b.css",
-    "static/js/main.7c7ea95a.js"
+    "static/css/main.1f2c6107.css",
+    "static/js/main.8ab0a1ca.js"
   ]
 }

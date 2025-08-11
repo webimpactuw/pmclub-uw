@@ -26,7 +26,7 @@ const About = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-      `*[_type == "clubOfficer"]{
+      `*[_type == "clubOfficer"] | order(orderRank){
         fname,
         lname,
         pos,
@@ -74,7 +74,7 @@ const About = () => {
           <div
             key={i}
             className={`team-card ${flipped[i] ? "flipped" : ""} ${
-              i === officers.length-1 ? "last" : ""
+              officers.length%3 !== 0 && i === officers.length-1? "last" : ""
             }`}
             onClick={() => handleFlip(i)}
           >

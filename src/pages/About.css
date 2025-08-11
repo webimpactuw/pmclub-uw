@@ -64,6 +64,7 @@
     perspective: 800px;
     cursor: pointer;
     transform-style: preserve-3d;
+    margin-top: 15px;
   }
   .team-card.last {
     grid-column: 2; /* 10th card in the center below */

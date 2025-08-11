@@ -20,9 +20,10 @@ export default defineConfig({
           return S.list()
             .title('Content')
             .items([
-              ...S.documentTypeListItems().reverse(),
+              ...S.documentTypeListItems(),
               // Minimum required configuration
               orderableDocumentListDeskItem({type: 'eventInfo', S, context}),
+              orderableDocumentListDeskItem({type: 'clubOfficer', S, context}),
             ])
           },
       }), 

@@ -1,3 +1,5 @@
+import {orderRankField} from '@sanity/orderable-document-list';
+
 export default {
     title: 'Club Officers',
     name: 'clubOfficer',
@@ -35,5 +37,6 @@ export default {
         hotspot: true,
       },
     },
+    orderRankField({ type: "clubOfficer", newItemPosition: "before" }),
     ]
   }

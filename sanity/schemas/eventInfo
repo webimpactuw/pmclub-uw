@@ -5,6 +5,8 @@ import {
   takeNotes
 } from "../../src/assets/icons/icons"
 
+import {orderRankField} from '@sanity/orderable-document-list';
+
 
 export default {
     title: 'Events',
@@ -30,7 +32,7 @@ export default {
       title: 'Choose an Icon',
       name: 'icon',
       type: 'visualOptions',
-      description: 'Select an icon (you can preview what they look like in the /src/assets/icons folder',
+      description: 'Select an icon',
       options: {
         showLabels: false,
         showTooltip: true,
@@ -136,10 +138,15 @@ export default {
       title: "Slug",
       name: "slug",
       type: "slug",
+      validation: Rule => Rule.required(),
+      description: "This is an identifier field which must be unique accross different events. " + 
+                  "The generate button generates this field using the social media link. " +
+                  "If no link is provided, you can also type in your own.",
       options: {
         source: "socialMediaLink",
         maxLength: 96,
       },
     },
+    orderRankField({ type: "eventInfo", newItemPosition: "before" }),
     ]
   }

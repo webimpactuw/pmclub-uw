@@ -7,6 +7,7 @@ export default {
       title: "Photo",
       name: "photo",
       type: "image",
+      validation: Rule => Rule.required(),
       options: {
         hotspot: true,
       },
@@ -16,15 +17,6 @@ export default {
       name: 'alt',
       type: 'string',
       validation: Rule => Rule.required()
-    },
-    {
-      title: "Slug",
-      name: "slug",
-      type: "slug",
-      options: {
-        source: "alt",
-        maxLength: 96,
-      },
     },
     ]
   }

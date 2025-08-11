@@ -19,7 +19,7 @@ const Calendar = () => {
         featured,
         socialMediaLink,
         slug,
-      }`
+      } | order(orderRank)`
       )
       .then((data) => setEvents(data))
       .catch(console.error);
@@ -31,10 +31,10 @@ const Calendar = () => {
 			<h2>
 				Calendar
 			</h2>
-			<div style={{alignItems:"center", marginTop:"20px"}}>
+			<div style={{alignItems:"center"}}>
 				{events &&
-					events.map((event) => (
-						<Accordion key={event._id} event={event} />
+					events.map((event, slug) => (
+						<Accordion key={slug} event={event} />
 					))}
 			</div>
 		</div>

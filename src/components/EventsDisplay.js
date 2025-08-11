@@ -11,7 +11,6 @@ const EventsDisplay = () => {
 			`*[_type == "eventInfo"]{
       	eventName,
 				slug,
-      	desc,
       	image{
         asset->{
           	_id,
@@ -22,7 +21,7 @@ const EventsDisplay = () => {
 				eventDuration,
 				socialMediaLink,
 				location,
-    	}`
+    	}|order(orderRank)`
 			)
 			.then((data) => setEvents(data))
 			.catch(console.error);
@@ -33,12 +32,16 @@ const EventsDisplay = () => {
 			<h2>
 				Upcoming Events
 			</h2>
-			<div style={{display:"flex", height: "700px", flexDirection:"row", marginLeft:"100px", marginRight:"100px"}}>
-				{events &&
-					events.map((event, slug) => (
-						<EventCard key={event.slug} event={event} />
-					))}
+      <section style={{height: "30px"}}></section>
+			<div style={{height: "650px"}}>
+				<div style={{display:"flex", flexDirection:"row", height: "650px", width: "85%", margin: "auto"}}>
+					{events &&
+						events.map((event, slug) => (
+							<EventCard key={slug} event={event} />
+						))}
+				</div>
 			</div>
+
 		</div>
 	);
 

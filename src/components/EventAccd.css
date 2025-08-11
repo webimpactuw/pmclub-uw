@@ -13,7 +13,8 @@
   gap: 5px;
   text-align: left;
   vertical-align: middle;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-top: 20px;
 }
 
 .accordion-title:hover {
@@ -27,7 +28,6 @@
 
 .accordion-title,
 .accordion-content {
-  padding-top: 20px;
   padding-bottom: 20px;
   justify-content: space-between;
   margin-right: 40px;
@@ -38,9 +38,9 @@
   border-top: 1px solid #BBB;
   display: grid;
   grid-template-columns: 2.7fr 1.5fr 1fr ;
+  margin-left: 50px;
   gap: 75px;
   animation-name: dropDown;
-
 }
 
 @keyframes dropDown {

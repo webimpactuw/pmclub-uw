@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./About.css";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
+import Placeholder from "../assets/placeholder.png";
 
 // (Optionally import your real image instead of this placeholder)
 import heroImage from "../assets/About_TeamPicture.jpg";
@@ -67,7 +68,7 @@ const About = () => {
     </div>
       {/* ====== Our Team Section ====== */}
     <div className="gradient-section">
-      <h1 className="about-title">Our Team</h1>
+      <h2 className="about-title">Our Team</h2>
       <div className="team-grid">
         {officers && Array.from({ length: officers.length }).map((_, i) => (
           <div
@@ -79,7 +80,7 @@ const About = () => {
           >
             <div className="card-face front">
               <div className="officer-photo">
-                <img src={urlFor(officers[i].photo).url()} alt={officers[i].fname} style={{height: "225px"}}/>
+                <img src={officers[i].photo? urlFor(officers[i].photo).url() : Placeholder} alt={officers[i].fname} style={{height: "100%"}}/>
               </div>
               <div className="card-footer">
                 <p className="member-name">{officers[i].fname} {officers[i].lname}</p>

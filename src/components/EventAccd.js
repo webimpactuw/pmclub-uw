@@ -6,18 +6,18 @@ import {
 } from "../assets/icons/icons"
 import sanityClient from "../client";
 
-const Accordion = ({ key, event }) => {
+const Accordion = ({ slug, event }) => {
   const [isActive, setIsActive] = useState(false);
   const img = getSVG(event.icon, 50);
   return (
     <>
-      <div key={key} className="accordion">
+      <div key={slug} className="accordion">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
-          {img}
-          <p>{event.eventName}</p>
-          <p>{event.dayAndDates[0].date}</p>
-          <p>{event.eventDuration[0].start}{event.eventDuration[0].timeOfDay1}</p>
-          <p>{isActive ? '-' : '+'}</p>
+          <span>{img}</span>
+          <p style={{fontWeight: "600"}}>{event.eventName}</p>
+          <p><i>{event.dayAndDates[0].date}</i></p>
+          <p><i>{event.eventDuration[0].start}{event.eventDuration[0].timeOfDay1}</i></p>
+          <p style={{fontSize:"17px"}}><b>{isActive ? '-' : '+'}</b></p>
         </div>
         {isActive && 
           <>
@@ -26,10 +26,10 @@ const Accordion = ({ key, event }) => {
             <div style={{textAlign:"left"}}>
               <h4>Featuring</h4>
               <ul style={{margin:"14px", padding:"0"}}>
-              {event.featured &&
+              {event.featured?
                 event.featured.map((person, index) => (
                   <li key={index}>{person.name} - <b>{person.affiliation}</b></li>
-                ))}
+                )) : <li key="NA">N/A</li>}
               </ul>
             </div>
             <div style={{textAlign:"left"}}><h4>Location</h4>{event.location ? event.location:"N/A"}</div>

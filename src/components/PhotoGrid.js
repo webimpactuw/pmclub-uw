@@ -48,8 +48,8 @@ const PhotoGrid = () => {
       <h2>Gallery</h2>
       <br/>
       <div className="masonry">
-        {clubImgs && clubImgs.map((clubImg) => (
-          <div className="item" key={clubImg.slug}>
+        {clubImgs && clubImgs.map((clubImg, slug) => (
+          <div className="item" key={slug}>
             <img
               src={urlFor(clubImg.photo).url()}
               alt={clubImg.alt}

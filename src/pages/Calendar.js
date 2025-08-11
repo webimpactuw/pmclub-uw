@@ -9,7 +9,7 @@ const Calendar = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-      `*[_type == "eventInfo"]{
+      `*[_type == "eventInfo"] | order(orderRank){
         eventName,
         desc,
         icon,
@@ -19,7 +19,7 @@ const Calendar = () => {
         featured,
         socialMediaLink,
         slug,
-      } | order(orderRank)`
+      }`
       )
       .then((data) => setEvents(data))
       .catch(console.error);

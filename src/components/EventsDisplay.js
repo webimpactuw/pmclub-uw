@@ -8,7 +8,7 @@ const EventsDisplay = () => {
 	useEffect(() => {
 		sanityClient
 			.fetch(
-			`*[_type == "eventInfo"]{
+			`*[_type == "eventInfo"]|order(orderRank){
       	eventName,
 				slug,
       	image{
@@ -21,7 +21,7 @@ const EventsDisplay = () => {
 				eventDuration,
 				socialMediaLink,
 				location,
-    	}|order(orderRank)`
+    	}`
 			)
 			.then((data) => setEvents(data))
 			.catch(console.error);

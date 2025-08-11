@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pmclub-uw/static/css/main.1f2c6107.css",
-    "main.js": "/pmclub-uw/static/js/main.b17729f1.js",
+    "main.css": "/pmclub-uw/static/css/main.c3179cc6.css",
+    "main.js": "/pmclub-uw/static/js/main.e9392be8.js",
     "static/js/308.39f10ea2.chunk.js": "/pmclub-uw/static/js/308.39f10ea2.chunk.js",
     "static/js/37.738ccdf1.chunk.js": "/pmclub-uw/static/js/37.738ccdf1.chunk.js",
     "static/js/511.88b5066b.chunk.js": "/pmclub-uw/static/js/511.88b5066b.chunk.js",
@@ -17,14 +17,14 @@
     "static/media/Announcement.svg": "/pmclub-uw/static/media/Announcement.852ce189063a4b32587716c9ffe73d8d.svg",
     "index.html": "/pmclub-uw/index.html",
     "static/media/Arrow 2.svg": "/pmclub-uw/static/media/Arrow 2.549b353f7e38004919594d10af7a3aa4.svg",
-    "main.1f2c6107.css.map": "/pmclub-uw/static/css/main.1f2c6107.css.map",
-    "main.b17729f1.js.map": "/pmclub-uw/static/js/main.b17729f1.js.map",
+    "main.c3179cc6.css.map": "/pmclub-uw/static/css/main.c3179cc6.css.map",
+    "main.e9392be8.js.map": "/pmclub-uw/static/js/main.e9392be8.js.map",
     "308.39f10ea2.chunk.js.map": "/pmclub-uw/static/js/308.39f10ea2.chunk.js.map",
     "37.738ccdf1.chunk.js.map": "/pmclub-uw/static/js/37.738ccdf1.chunk.js.map",
     "511.88b5066b.chunk.js.map": "/pmclub-uw/static/js/511.88b5066b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f2c6107.css",
-    "static/js/main.b17729f1.js"
+    "static/css/main.c3179cc6.css",
+    "static/js/main.e9392be8.js"
   ]
 }

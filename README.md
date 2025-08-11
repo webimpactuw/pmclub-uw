@@ -18,7 +18,8 @@ This website uses [Sanity.io](https://www.sanity.io/), a headless CMS, to provid
 The following information for the website can be updated / modified via Sanity:
 - Officer info cards
 - Events
-  - Events are orderable via the [orderable document list plugin](https://www.sanity.io/plugins/orderable-document-list). 
+  - Events are orderable via the [orderable document list plugin](https://www.sanity.io/plugins/orderable-document-list).
+  - Events should be ordered from most to least recent, top to bottom.
 - Resources
 - Photos in the photo gallery
 

@@ -13,7 +13,7 @@ import ScrollToTop from "./scrollToTop";
 function App() {
   return (
     <div className="App"> 
-      <HashRouter basename="/pmclub-uw/#">
+      <HashRouter>
         <ScrollToTop />
         <Navbar />  
         <Routes>

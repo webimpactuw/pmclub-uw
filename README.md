@@ -1,6 +1,6 @@
 # Website for the Product Management Club @ UW
 
-This website is the cumulative effort of 6 UW students over the course of 6 months as part of the [Web Impact](https://webimpactuw.org/) initiative to facilitate the creation of free-of-charge websites for local communities and organizations within the Seattle area. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), styled with CSS, and deployed through GitHub pages.
+This website is the cumulative effort of 6 UW students over the course of 6 months as part of the [Web Impact](https://webimpactuw.org/) initiative to facilitate the creation of free-of-charge websites for local communities and organizations within the Seattle area. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), styled with CSS, and deployed through GitHub pages. Icons used on the calendar page are the Fluent UI System Color Icons by Microsoft Corporation.
 
 ## The Team:
 
@@ -15,9 +15,10 @@ This website is the cumulative effort of 6 UW students over the course of 6 mont
 
 This website uses [Sanity.io](https://www.sanity.io/), a headless CMS, to provide an intuitive, code-less editing interface for the client.
 
-The following components for the website can be updated / modified via Sanity:
+The following information for the website can be updated / modified via Sanity:
 - Officer info cards
 - Events
+  - Events are orderable via the [orderable document list plugin](https://www.sanity.io/plugins/orderable-document-list). 
 - Resources
 - Photos in the photo gallery
 
@@ -43,7 +44,7 @@ After this has succeeded, you can run the following scripts:
 
 Run `sanity install` in the sanity folder (`./sanity`).
 
-After this has succeeded, you can run the following scripts:
+After this has succeeded, you can run the following scripts (still inside the sanity folder):
 
 - **`sanity dev`**
   - Runs the sanity studio in development mode; open [http://localhost:3333](http://localhost:3333) to view it in your browser.
@@ -56,6 +57,9 @@ After this has succeeded, you can run the following scripts:
  To deploy any new changes to the GitHub pages, run the following in the project directory: 
 - `npm run predeploy`
 - `npm run deploy`
+
+ To deploy any new changes to the Sanity schema, run the following in the sanity folder (`./sanity`): 
+- `sanity deploy`
 
 ## Learn More
 

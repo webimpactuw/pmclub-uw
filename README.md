@@ -15,9 +15,10 @@ This website is the cumulative effort of 6 UW students over the course of 6 mont
 
 This website uses [Sanity.io](https://www.sanity.io/), a headless CMS, to provide an intuitive, code-less editing interface for the client.
 
-The following components for the website can be updated / modified via Sanity:
+The following information for the website can be updated / modified via Sanity:
 - Officer info cards
 - Events
+  - Events are orderable via the [orderable document list plugin](https://www.sanity.io/plugins/orderable-document-list). 
 - Resources
 - Photos in the photo gallery
 

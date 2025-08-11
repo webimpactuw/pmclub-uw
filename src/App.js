@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { HashRouter, Routes, Route} from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,7 +13,7 @@ import ScrollToTop from "./scrollToTop";
 function App() {
   return (
     <div className="App"> 
-      <BrowserRouter basename="/pmclub-uw">
+      <HashRouter basename="/pmclub-uw">
         <ScrollToTop />
         <Navbar />  
         <Routes>
@@ -26,7 +26,7 @@ function App() {
           </Route>
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

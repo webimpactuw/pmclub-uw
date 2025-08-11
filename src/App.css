@@ -3,13 +3,13 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   background: #fafafa;
 }
 
 .gradient-section {
   background: linear-gradient(45deg, #f6f2a6 0%, #fbf8e0 15%, #fafafa 25%, #fafafa 75%, #f5eefc 85%, #e3d6ff 100%);
-  padding: 2rem 6rem;
+  padding: 2rem 5.5rem;
 }
 
 .gradient-section > * {
@@ -59,14 +59,14 @@
 
 h2 {
   color: #000;
-  font-size: 40px;
+  font-size: max(24px, 2.7vw);
   font-style: italic;
   font-weight: 400;
   line-height: normal;
 }
 
 h3 {
-  font-size: 38px;
+  font-size: max(20px, 2.4vw);
   font-style: normal;
   font-weight: 400;
   line-height: normal;

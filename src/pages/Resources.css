@@ -20,7 +20,7 @@
   /* Header section */
   .resources-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
   
   /* .resources-title {
@@ -33,7 +33,6 @@
   } */
   
   .resources-subtitle {
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 18px;
     color: #555;
     line-height: 1.5;
@@ -80,11 +79,10 @@
   }
   
   .resource-title-main {
-    /* font-family: 'Roboto', sans-serif; */
     font-weight: 400;
     font-size: 32px;
     line-height: 41px;
-    color: #000000;
+    color: #6a4cff;
     margin-bottom: 2rem;
   }
   
@@ -109,6 +107,7 @@
   .resource-link:hover {
     background: linear-gradient(to right, #9b76ff, #6a4cff);
     color: #fff;
+    border: none;
   }
   
   .resource-link .arrow {
@@ -129,7 +128,6 @@
   }
   
   .resource-link span {
-    /* font-family: 'Roboto', sans-serif; */
     font-weight: 400;
     font-size: 16px;
   }

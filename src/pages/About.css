@@ -1,26 +1,15 @@
 /* === Container & Title === */
 
   /* Our Team header: Figtree italic + centered rule */
-.about-title {
-    /* font-family: 'Figtree', sans-serif; */
-    font-style: italic;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    color: #000;
-    text-align: center;
-    margin: 2rem auto 1rem;
-    position: relative;
-  }
-  
+
   /* the horizontal line underneath */
   .about-title::after {
     content: '';
     display: block;
-    width: 180px;                 /* adjust to match design */
+    width: 450px;                 /* adjust to match design */
     height: 1px;
     background-color: rgba(0,0,0,0.2);
-    margin: 0.5rem auto 0;
+    margin: 2rem auto 1rem;
   }
   
   
@@ -37,14 +26,12 @@
     flex: 1 1 45%;
   }
   .about-hero-text h2 {
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 36px;
     font-style: italic;
     color: #6a4cff;
     margin-bottom: 1rem;
   }
   .about-hero-text p {
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 15px;
     line-height: 1.6;
     color: #333;
@@ -64,7 +51,7 @@
   .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
+    grid-gap: 0.3rem;
     max-width: 980px;
     margin: 0 auto;
   }
@@ -72,8 +59,8 @@
   /* === Each Card === */
   .team-card {
     position: relative;
-    width: 90%;
-    height: 320px;
+    width: 85%;
+    height: 300px;
     perspective: 800px;
     cursor: pointer;
     transform-style: preserve-3d;
@@ -104,6 +91,7 @@
   }
   .officer-photo {
     flex: 1 0 auto;
+    height: 70%;
     padding-top: 0.75rem;
   }
   .card-footer {

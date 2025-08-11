@@ -13,6 +13,7 @@ function urlFor(source) {
 }
 
 const EventCard = ({ slug, event }) => {
+  const disabled = event.socialMediaLink? false: true;
 	return (
     <div key={slug} className="card">
       <img src={event.image? urlFor(event.image).url() : Placeholder} alt={event.title} style={{maxHeight: "55%", maxWidth: "85%", marginRight: "auto", display: "block", marginLeft: "auto", marginTop: "30px"}}/>
@@ -22,8 +23,8 @@ const EventCard = ({ slug, event }) => {
         🕓 {event.eventDuration[0].start}{event.eventDuration[0].timeOfDay1} - {event.eventDuration[0].end}{event.eventDuration[0].timeOfDay2}</p> 
       <p className="time">📍 {event.location}</p>
       <p></p>
-      <HomeButton onClick={() => window.open(event.socialMediaLink, '_blank')}>
-        More Info
+      <HomeButton disabled={disabled} onClick={() => window.open(event.socialMediaLink, '_blank')}>
+        {disabled? "Not available" : "More Info"}
       </HomeButton>
     </div> 
 	);

@@ -2,19 +2,11 @@ import React from 'react';
 import "./Button.css";
 import { ReactComponent as Arrow } from '../assets/Arrow 2.svg';
 
-export function ResouorcesButton({ children, onClick }){
+export function HomeButton({ children, onClick, disabled }){
   return (
-    <button style={{color: "purple"}} onClick={onClick}>
-      {children}
-    </button>
-  );
-};
-
-export function HomeButton({ children, onClick }){
-  return (
-    <button className="home" onClick={onClick}>
+    <button className="home" onClick={onClick} disabled={disabled}>
       <span>{children}</span>
-      <div className="arrow"><Arrow/></div>
+      {!disabled && <div className="arrow"><Arrow/></div>}
     </button>
   );
 };

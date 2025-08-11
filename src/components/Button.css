@@ -29,9 +29,13 @@
   left: 89%;
 }
 
+.home:disabled {
+  background: gray;
+  cursor: default;
+}
+
 /* Text inside link */
 .home span {
-  /* font-family: 'Roboto', sans-serif; */
   font-weight: 400;
   font-size: 16px;
 }

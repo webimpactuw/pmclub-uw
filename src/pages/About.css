@@ -66,9 +66,6 @@
     transform-style: preserve-3d;
     margin-top: 15px;
   }
-  .team-card.last {
-    grid-column: 2; /* 10th card in the center below */
-  }
   
   /* Shared face styles */
   .card-face {
@@ -130,4 +127,23 @@
   .team-card.flipped .back {
     transform: rotateY(0);
   }
-  
+/* Large screens */
+@media only screen and (min-width: 1360px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Medium-sized screens */
+@media only screen and (max-width: 1359px) and (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px){
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

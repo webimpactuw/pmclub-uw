@@ -73,9 +73,7 @@ const About = () => {
         {officers && Array.from({ length: officers.length }).map((_, i) => (
           <div
             key={i}
-            className={`team-card ${flipped[i] ? "flipped" : ""} ${
-              officers.length%3 !== 0 && i === officers.length-1? "last" : ""
-            }`}
+            className={`team-card ${flipped[i] ? "flipped" : ""}`}
             onClick={() => handleFlip(i)}
           >
             <div className="card-face front">

@@ -34,7 +34,7 @@ const EventsDisplay = () => {
 			</h2>
       <section style={{height: "30px"}}></section>
 			<div style={{height: "650px"}}>
-				<div style={{display:"flex", flexDirection:"row", height: "650px", width: "85%", margin: "auto"}}>
+				<div style={{display:"flex", flexDirection:"row", height: "650px", width: "min(80%, 1200px)", margin: "auto"}}>
 					{events &&
 						events.map((event, slug) => (
 							<EventCard key={slug} event={event} />

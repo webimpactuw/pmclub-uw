@@ -84,7 +84,7 @@ const Resources = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>{link.label}</span>
+                  <span><p>{link.label}</p></span>
                   <div className="arrow"></div>
                 </a>
               ))}

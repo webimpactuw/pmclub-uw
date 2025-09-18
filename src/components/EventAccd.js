@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./EventAccd.css";
-import minion from "../assets/icons/Announcement.svg";
 import {
   getSVG
 } from "../assets/icons/icons"

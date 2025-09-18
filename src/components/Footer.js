@@ -7,7 +7,7 @@ const Footer = () => {
     return (
       <footer className="footer">
         <img src={logo} alt="PM Logo" className="footer-logo" />
-        <p>Keep in touch with us to see our upcoming events!</p>
+        <p style={{fontSize:"16px"}}>Keep in touch with us to see our upcoming events!</p>
         <div className="social-icons">
           <a href="https://www.instagram.com/pmclubuw/" target="_blank" rel="noreferrer">
             <img src={instagramImage} alt="Instagram" className="icon" />

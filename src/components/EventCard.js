@@ -16,7 +16,7 @@ const EventCard = ({ slug, event }) => {
   const disabled = event.socialMediaLink? false: true;
 	return (
     <div key={slug} className="card">
-      <img src={event.image? urlFor(event.image).url() : Placeholder} alt={event.title} style={{maxHeight: "55%", maxWidth: "85%", marginRight: "auto", display: "block", marginLeft: "auto", marginTop: "30px"}}/>
+      <img src={event.image? urlFor(event.image).url() : Placeholder} alt={event.title} style={{maxHeight: "50%", maxWidth: "85%", marginRight: "auto", display: "block", marginLeft: "auto", marginTop: "30px"}}/>
       <h3>{event.eventName}</h3>
       <p className="time">🗓️ {event.dayAndDates[0].weekday}, {event.dayAndDates[0].date}</p>
       <p className="time">

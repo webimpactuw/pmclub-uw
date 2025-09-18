@@ -9,7 +9,7 @@
 
 #image-section{
   width: 100%; 
-  height: 400px; 
+  height: max(350px, 27vw); 
   object-fit: cover;
   object-position: 25% 50%; 
 };

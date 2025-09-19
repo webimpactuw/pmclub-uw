@@ -61,11 +61,10 @@ const Resources = () => {
         </p>
       </div>
 
-      {/* Add alternating gradient containers for each resource section */}
       {resourcesData.map((resource, index) => (
         <div
           key={index}
-          className={`resource-section ${index % 2 === 0 ? 'gradient-yellow' : 'gradient-purple'}`} // Apply gradient classes here
+          className={"resource-section"}
         >
           <div className={`resource-box ${resource.reverse ? 'reverse' : ''}`}>
             <div

@@ -18,7 +18,6 @@ This website uses [Sanity.io](https://www.sanity.io/), a headless CMS, to provid
 The following information for the website can be updated / modified via Sanity:
 - Officer info cards
 - Events
-- Resources
 - Photos in the photo gallery
 - Events (`eventInfo`) and Officers (`clubOfficer`) are orderable via the [orderable document list plugin](https://www.sanity.io/plugins/orderable-document-list) and fetch in order from top to bottom of the list.
 

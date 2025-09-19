@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/pmclub-uw/static/css/main.332b2f71.css",
-    "main.js": "/pmclub-uw/static/js/main.e3a7f156.js",
+    "main.css": "/pmclub-uw/static/css/main.6fb5c3e9.css",
+    "main.js": "/pmclub-uw/static/js/main.1767464a.js",
     "static/js/308.39f10ea2.chunk.js": "/pmclub-uw/static/js/308.39f10ea2.chunk.js",
     "static/js/37.738ccdf1.chunk.js": "/pmclub-uw/static/js/37.738ccdf1.chunk.js",
     "static/js/511.88b5066b.chunk.js": "/pmclub-uw/static/js/511.88b5066b.chunk.js",
     "static/media/cover.jpg": "/pmclub-uw/static/media/cover.6af05e03714457290af5.jpg",
-    "static/media/minion.png": "/pmclub-uw/static/media/minion.970019cad28320693f29.png",
     "static/media/Resources_ProjectRequirements.jpg": "/pmclub-uw/static/media/Resources_ProjectRequirements.7f8385ae771b706038c2.jpg",
     "static/media/Resources_Youtube.jpg": "/pmclub-uw/static/media/Resources_Youtube.cda29bff5e9d3a8a78d0.jpg",
     "static/media/PM_Club_logo_bg_removed.png": "/pmclub-uw/static/media/PM_Club_logo_bg_removed.d79d2eb469e74f07f752.png",
@@ -16,14 +15,14 @@
     "static/media/Resources_Interviews.jpg": "/pmclub-uw/static/media/Resources_Interviews.b902b657e6fe52690d16.jpg",
     "index.html": "/pmclub-uw/index.html",
     "static/media/Arrow 2.svg": "/pmclub-uw/static/media/Arrow 2.549b353f7e38004919594d10af7a3aa4.svg",
-    "main.332b2f71.css.map": "/pmclub-uw/static/css/main.332b2f71.css.map",
-    "main.e3a7f156.js.map": "/pmclub-uw/static/js/main.e3a7f156.js.map",
+    "main.6fb5c3e9.css.map": "/pmclub-uw/static/css/main.6fb5c3e9.css.map",
+    "main.1767464a.js.map": "/pmclub-uw/static/js/main.1767464a.js.map",
     "308.39f10ea2.chunk.js.map": "/pmclub-uw/static/js/308.39f10ea2.chunk.js.map",
     "37.738ccdf1.chunk.js.map": "/pmclub-uw/static/js/37.738ccdf1.chunk.js.map",
     "511.88b5066b.chunk.js.map": "/pmclub-uw/static/js/511.88b5066b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.332b2f71.css",
-    "static/js/main.e3a7f156.js"
+    "static/css/main.6fb5c3e9.css",
+    "static/js/main.1767464a.js"
   ]
 }

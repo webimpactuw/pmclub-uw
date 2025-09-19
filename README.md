@@ -26,6 +26,10 @@ You can access the sanity studio at [https://pmclub-uw.sanity.studio/](https://p
 
 ## Step-by-step to run this React application on your local computer
 
+### 0. Clone this repo to your local machine using git 
+
+Here's [Github's Documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+
 ### 1. Install node.js / npm
 
 Visit [node.js](https://www.figma.com/proto/hY5yGUDlFY7zwwk2rbZHyA/Fidelity?node-id=509-326&t=5Goj6EJUAC7byqcG-9&scaling=scale-down&content-scaling=fixed&page-id=197%3A84&starting-point-node-id=509%3A326&show-proto-sidebar=1) and follow their instructions.

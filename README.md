@@ -1,6 +1,6 @@
 # Website for the Product Management Club @ UW
 
-This website is the cumulative effort of 6 UW students over the course of 6 months as part of the [Web Impact](https://webimpactuw.org/) initiative to facilitate the creation of free-of-charge websites for local communities and organizations within the Seattle area. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), styled with CSS, and deployed through GitHub pages. Icons used on the calendar page are the Fluent UI System Color Icons by Microsoft Corporation.
+This website is the cumulative effort of 6 UW students over the course of 6 months as part of the [Web Impact](https://webimpactuw.org/) initiative to facilitate the creation of free-of-charge websites for local communities and organizations within the Seattle area. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), styled with CSS, and deployed through GitHub pages. Icons used on the events page are the Fluent UI System Color Icons by Microsoft Corporation.
 
 ## The Team:
 

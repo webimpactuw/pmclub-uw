@@ -1,9 +1,9 @@
 import Accordion from '../components/EventAccd';
 import React, { useState, useEffect } from "react";
 import sanityClient from "../client";
-import "./Calendar.css";
+import "./Events.css";
 
-const Calendar = () => {
+const Events = () => {
   const [events, setEvents] = useState(null);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Calendar = () => {
 		<div className="gradient-section">
 		<div className="main">
 			<h2>
-				Calendar
+				Events
 			</h2>
 			<div style={{alignItems:"center"}}>
 				{events &&
@@ -42,4 +42,4 @@ const Calendar = () => {
   );
 };
 
-export default Calendar;
+export default Events;

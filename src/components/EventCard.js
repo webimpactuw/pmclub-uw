@@ -17,7 +17,7 @@ const EventCard = ({ slug, event }) => {
 	return (
     <div key={slug} className="card">
       <img src={event.image? urlFor(event.image).url() : Placeholder} alt={event.title} style={{maxHeight: "50%", maxWidth: "85%", marginRight: "auto", display: "block", marginLeft: "auto", marginTop: "30px"}}/>
-      <h3>{event.eventName}</h3>
+      <h3 style={{marginTop: "20px"}}>{event.eventName}</h3>
       <p className="time">🗓️ {event.dayAndDates[0].weekday}, {event.dayAndDates[0].date}</p>
       <p className="time">
         🕓 {event.eventDuration[0].start}{event.eventDuration[0].timeOfDay1} - {event.eventDuration[0].end}{event.eventDuration[0].timeOfDay2}</p> 

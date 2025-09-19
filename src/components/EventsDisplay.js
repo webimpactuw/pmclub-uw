@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../client";
 import EventCard from "./EventCard";
+import './EventCard.css';
 
 const EventsDisplay = () => {
 	const [events, setEvents] = useState(null);
@@ -33,14 +34,12 @@ const EventsDisplay = () => {
 				Upcoming Events
 			</h2>
       <section style={{height: "30px"}}></section>
-			<div style={{height: "650px"}}>
-				<div style={{display:"flex", flexDirection:"row", height: "650px", width: "min(80%, 1200px)", margin: "auto"}}>
+				<div className="card-section">
 					{events &&
 						events.map((event, slug) => (
 							<EventCard key={slug} event={event} />
 						))}
 				</div>
-			</div>
 
 		</div>
 	);

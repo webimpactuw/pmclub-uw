@@ -1,5 +1,6 @@
 import React from "react";
 import "./Modal.css";
+// TODO: extra feature for clicking on and enlarging photos in the photo gallery
 
 const Modal = ({ isOpen, onClose, children }) => {
     if (!isOpen) return null;

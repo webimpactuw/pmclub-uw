@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../client";
 import "./PhotoGrid.css";
 import imageUrlBuilder from "@sanity/image-url";
-import Modal from "./Modal";
-import minion from "../assets/minion.png";
+// import Modal from './Modal' // TODO: incomplete development
 
 const builder = imageUrlBuilder(sanityClient);
 

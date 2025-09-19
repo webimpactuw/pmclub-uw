@@ -34,7 +34,8 @@
 .masonry { /* Masonry container */
   column-count: 3;
   column-gap: 1em;
-  margin: 1.5em 1.5em;
+  margin: auto;
+  width: min(95%, 1450px);
 }
 
 .item { /* Masonry bricks or child elements */
@@ -59,21 +60,21 @@
 }
 
 /* Masonry on large screens */
-@media only screen and (min-width: 1360px) {
+@media only screen and (min-width: 1460px) {
   .masonry {
     column-count: 4;
   }
 }
 
 /* Masonry on medium-sized screens */
-@media only screen and (max-width: 1359px) and (min-width: 768px) {
+@media only screen and (max-width: 1459px) and (min-width: 968px) {
   .masonry {
     column-count: 3;
   }
 }
 
 /* Masonry on small screens */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 967px){
   .masonry {
     column-count: 2;
   }

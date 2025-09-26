@@ -31,7 +31,7 @@ Here's [Github's Documentation](https://docs.github.com/en/repositories/creating
 
 ### 1. Install node.js / npm
 
-Visit [node.js](https://www.figma.com/proto/hY5yGUDlFY7zwwk2rbZHyA/Fidelity?node-id=509-326&t=5Goj6EJUAC7byqcG-9&scaling=scale-down&content-scaling=fixed&page-id=197%3A84&starting-point-node-id=509%3A326&show-proto-sidebar=1) and follow their instructions.
+Visit [node.js](https://nodejs.org/en/download) and follow their instructions.
 
 ### 2. Install Dependencies
 
